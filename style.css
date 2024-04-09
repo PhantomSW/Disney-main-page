@@ -17,11 +17,31 @@ body {
 }
 
 header {
-    padding: 20px;
+    padding: 10px;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.signin {
+    font-size: 18px;
+    background-color: #000000CC;
+    color: #F9F9F9;
+    border: 1px solid #F9F9F9;
+    padding: 13px 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: auto;
+}
+
+.signin:hover {
+    background-color: #F9F9F9;
+    color: #000000CC;
 }
