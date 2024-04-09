@@ -243,6 +243,54 @@ margin: 0 auto;
     margin-right: 15px;
 }
 
+/* ------------------------ */
+/* ------- Accordion ------ */
+/* ------------------------ */
+
+.accordion {
+    background-color: #13151C;
+    color: #F9F9F9;
+    cursor: pointer;
+    padding: 24px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    transition: 0.4s;
+    margin-top: 10px;
+    border-radius: 0px;
+  }
+
+  .accordion:hover {
+    background-color: #13151C;
+  }
+  
+  .accordionExtended {
+    padding: 0 18px;
+    font-size: 16px;
+    display: none;
+    background-color: #13151C;
+    color: #C0C0C0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  
+  .accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796";
+  }
+
+  .accordionExtended p, .accordionExtended li {
+    margin-bottom: 20px;
+}
 
 /* ------------------ */
 /* ------- IDs ------ */
