@@ -1,3 +1,23 @@
+/* ------------------ */
+/* ------ Font ------ */
+/* ------------------ */
+
+@font-face{
+    font-family:Inspire;
+    src:url(https://static-assets.bamgrid.com/fonts/inspire/Inspire-Bold.4ff15ddc93445342649194969715b0b5.woff2);
+    font-weight:700;
+    font-style:normal;
+    font-display:swap
+}
+
+@font-face{
+    font-family:Inspire;
+    src:url(https://static-assets.bamgrid.com/fonts/inspire/Inspire-Regular.f2199f841165c4ddbafcf177da3ef974.woff2);
+    font-weight:400;
+    font-style:normal;
+    font-display:optional
+}
+
 /* ------------------------ */
 /* ------ Main parts ------ */
 /* ------------------------ */
@@ -15,7 +35,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Inspire, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -37,6 +57,11 @@ h1 {
     color:#F9F9F9;
 }
 
+h2 {
+    font-size: 28px;
+    color:#F9F9F9;
+}
+
 h3 {
     color:#F9F9F9;
 }
@@ -51,7 +76,32 @@ a {
     text-decoration: none;
 }
 
+section {
+    padding: 62px;
+}
 
+/* --------------------- */
+/* ------ Utility ------ */
+/* --------------------- */
+
+.not-aligned {
+    text-align: left;
+}
+
+.tiny {
+    margin: 0px;
+    font-size: 12px;
+}
+
+.tab-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tab-content-element {
+    flex: 1;
+    margin: 0 10px;
+}
 
 /* --------------------- */
 /* ------ Sign-In ------ */
@@ -126,25 +176,56 @@ button:hover {
 }
 
 
-
-
-
+/* -------------------------- */
+/* ------ Subscription ------ */
+/* -------------------------- */
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    color: #C0C0C0;
 }
 
 th, td {
     border-bottom: 1px solid #ccc;
     padding: 10px;
     text-align: center;
+    font-weight: 400;
 }
 
 td {
     padding: 33px 8px;
 }
+
+.sub-button {
+    background-color: #136878;
+    padding: 8px 14px;
+    height: 50px;
+    max-width: 260px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.sub-button a {
+    color: #F9F9F9;
+}
+
+.sub-button:hover {
+    background-color: #0d4e63;
+}
+
+.premium {
+    background-color: #1D1F2B;
+    color: #F9F9F9;
+}
+
+
+/* --------------------- */
+/* ------- Footer ------ */
+/* --------------------- */
 
 .footer-links {
 display: flex;
@@ -162,7 +243,30 @@ margin: 0 auto;
     margin-right: 15px;
 }
 
-footer p {
-    margin: 0px;
-    font-size: 12px;
+
+/* ------------------ */
+/* ------- IDs ------ */
+/* ------------------ */
+
+#subscription {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+
+/* -------------------- */
+/* ------- Other ------ */
+/* -------------------- */
+
+.watch-img {
+    width: 100px;
+    height: 100px;
+}
+
+.access-img {
+    width: 22vw;
+}
+
+.exemple p{
+    margin: 4px;
 }

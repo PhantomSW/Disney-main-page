@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disney+</title>
+    <title>Disney+ | Productions originales, films à succès et séries</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,9 +14,8 @@
     </header>
 
     <main>
-        
+        <section id="signin">
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
         <div class="signup">
             <h1>Nouvelles productions originales, grands films, séries cultes et encore + en streaming</h1>
             <h3>Sans coût additionnel. Sans engagement.*</h3>
@@ -29,9 +28,9 @@
 
             <p style="font-size: 18px;">Profitez de 12 mois au prix de 10 avec un abonnement Premium ou Standard annuel. Économies par rapport à un an d'abonnement mensuel.</p>
 
-            <div style="font-size: 12px;">
-                <p>* La résiliation prend effet à la fin de la période d’abonnement en cours. Abonnement requis.</p>
-                <p>Taylor Swift | The Eras Tour (Taylor's Version) disponible dès maintenant, © 2023 TAS Rights Management LLC. Retrouvez Nell rebelle en streaming dès le 29 mars. Retrouvez Iwájú en streaming dès le 3 avril.</p>
+            <div>
+                <p class="tiny">* La résiliation prend effet à la fin de la période d’abonnement en cours. Abonnement requis.</p>
+                <p class="tiny">Taylor Swift | The Eras Tour (Taylor's Version) disponible dès maintenant, © 2023 TAS Rights Management LLC. Retrouvez Nell rebelle en streaming dès le 29 mars. Retrouvez Iwájú en streaming dès le 3 avril.</p>
             </div>
 
             
@@ -39,61 +38,145 @@
 
         <img src="images/arrow_down.svg">
         <p></p>
+      </section>
 
-        <br><div class="img" style="background-image: url('images/loki1.jpg');"></div>
         
-        <div id="Abonnement">
+        <br><div class="img" style="background-image: url('images/loki1.jpg');"></div>
+
+        <section id="subscription">
+
+          <h1>Séléctionnez votre abonnement</h1>
+          
             <table>
                 <thead>
                   <tr>
-                    <th scope="col">empty</th>
-                    <th scope="col">STANDARD AVEC PUB</th>
-                    <th scope="col">STANDARD</th>
-                    <th style="background-color: #1D1F2B;" scope="col">PREMIUM</th>
+                    <th scope="col"></th>
+                    <th scope="col"><button class="sub-button"><a href="#">STANDARD AVEC PUB</a></button><br><p>5,99 € / mois</p></th>
+                    <th scope="col"><button class="sub-button"><a href="#">STANDARD</a></button><br><p>8,99 € / mois</p></th>
+                    <th class="premium" scope="col"><button class="sub-button-prem"><a href="#">PREMIUM</a></button><br><p>11,99 € / mois</p></th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Profitez de 12 mois au prix de 10*</th>
+                    <td class="not-aligned">Profitez de 12 mois au prix de 10*</th>
                     <td><img src="images/-.svg"></td>
-                    <td><a>89,90 € / an</a></td>
-                    <td style="background-color: #1D1F2B;"><a>119,90 € / an</a></td>
+                    <td><a style="color: #F9F9F9; text-decoration: underline; font-size: 18px;">89,90 € / an</a></td>
+                    <td class="premium"><a style="text-decoration: underline; font-size: 18px;">119,90 € / an</a></td>
                   </tr>
                   <tr>
-                    <td>Qualité vidéo jusqu'à</th>
+                    <td class="not-aligned">Qualité vidéo jusqu'à</th>
                     <td>1080p Full HD</td>
                     <td>1080p Full HD</td>
-                    <td style="background-color: #1D1F2B;">4K Ultra HD et HDR</td>
+                    <td class="premium">4K Ultra HD et HDR</td>
                   </tr>
                   <tr>
-                    <td>Lectures simultanées</th>
+                    <td class="not-aligned">Lectures simultanées</th>
                     <td>2</td>
                     <td>2</td>
-                    <td style="background-color: #1D1F2B;">4</td>
+                    <td class="premium">4</td>
                   </tr>
                   <tr>
-                    <td>Téléchargements</th>
+                    <td class="not-aligned">Téléchargements</th>
                         <td><img src="images/-.svg"></td>
                         <td><img src="images/yh.svg"></td>
-                        <td style="background-color: #1D1F2B;"><img src="images/yh.svg"></td>
+                        <td class="premium"><img src="images/yh.svg"></td>
                   </tr>
                   <tr>
-                    <td>Prise en charge de Dolby Atmos</th>
+                    <td class="not-aligned">Prise en charge de Dolby Atmos</th>
                         <td><img src="images/-.svg"></td>
                         <td><img src="images/-.svg"></td>
-                        <td style="background-color: #1D1F2B;"><img src="images/yh.svg"></td>
+                        <td class="premium"><img src="images/yh.svg"></td>
                   </tr>
                   <tr>
-                    <td>Streaming sans publicité**</th>
+                    <td class="not-aligned">Streaming sans publicité**</th>
                         <td><img src="images/-.svg"></td>
                         <td><img src="images/yh.svg"></td>
-                        <td style="background-color: #1D1F2B;"><img src="images/yh.svg"></td>
+                        <td class="premium"><img src="images/yh.svg"></td>
                   </tr>
                 </tbody>
                 
               </table>
               
-            </div>
+              <p class="not-aligned tiny">* Économies par rapport à un an d'abonnement mensuel.</p>
+              <p class="not-aligned tiny">** Toutes les offres d’abonnements peuvent inclure des bandes-annonces pour nos films de cinéma, la promotion de produits et services Disney, des messages de parrainage et autres contenus promotionnels limités. La qualité audio et vidéo dépend du débit Internet et des capacités de votre appareil. Abonnement Standard avec pub : pas disponible sur certains appareils, et ne permet pas les téléchargements. <a>En savoir plus.</a></p>
+            </section>
+
+            <section id="watch">
+              <h1>Regardez selon vos envies</h1>
+              <p>Profitez des plus belles histoires au monde, partout et à tout moment.</p>
+              <img src="images/grey.jpg">
+
+              <div class="tab-content">
+                <div class="tab-content-element">
+                  <img class="watch-img" src="images/1.png">
+                  <h2>Un divertissement sans fin</h2>
+                  <p>Découvrez des milliers d'heures de séries, films et productions originales.</p>
+                </div>
+                <div class="tab-content-element">
+                  <img class="watch-img" src="images/2.png">
+                  <h2>Disponible sur vos appareils préférés</h2>
+                  <p>Utilisez jusqu'à 4 appareils compatibles en simultané.</p>
+                </div>
+                <div class="tab-content-element">
+                  <img class="watch-img" src="images/3.png">
+                  <h2>Un contrôle parental intuitif</h2>
+                  <p>Protégez votre famille avec un contrôle parental simple d'utilisation.</p>
+                </div>
+              </div>
+            </section>
+
+
+
+
+
+            <section id="accessibility">
+              <h1>Accessible sur vos appareils préférés</h1>
+
+              <div class="tab-content">
+                <div class="tab-content-element">
+                  <img class="access-img" src="images/tv.png">
+                  <h2>Télévisions</h2>
+                  <div class="exemple">
+                    <p>Amazon Fire TV</p>
+                    <p>Appareils Android TV</p>
+                    <p>Apple TV</p>
+                    <p>Chromecast</p>
+                    <p>TV LG</p>
+                    <p>Roku</p>
+                    <p>Samsung</p>
+                  </div>
+                </div>
+                <div class="tab-content-element">
+                  <img class="access-img" src="images/pc.png">
+                  <h2>Oridnateurs</h2>
+                  <div class="exemple">
+                    <p>Chrome OS</p>
+                    <p>MacOS</p>
+                    <p>PC Windows</p>
+                  </div>
+                </div>
+                <div class="tab-content-element">
+                  <img class="access-img" src="images/phone.png">
+                  <h2>Mobiles et tablettes</h2>
+                  <div class="exemple">
+                    <p>Tablettes Amazon Fire</p>
+                    <p>Mobiles et tablettes Android</p>
+                    <p>iPhone & iPad</p>
+                  </div>
+                </div>
+                <div class="tab-content-element">
+                  <img class="access-img" src="images/controller.png">
+                  <h2>Consoles de jeux</h2>
+                  <div class="exemple">
+                    <p>PS4</p>
+                    <p>PS5</p>
+                    <p>Xbox One</p>
+                    <p>Xbox Series X</p>
+                    <p>Xbox Series S</p>
+                  </div>
+                </div>
+              </div>
+            </section>
 
     </main>
 
@@ -115,11 +198,10 @@
         </div>
 
         <br>
-        <p>Le contenu et les plateformes disponibles peuvent varier selon la zone géographique.</p>
-        <p>&copy; 2024 Disney et ses sociétés affiliées. Tous droits réservés.</p>
+        <p class="tiny">Le contenu et les plateformes disponibles peuvent varier selon la zone géographique.</p>
+        <p class="tiny">&copy; 2024 Disney et ses sociétés affiliées. Tous droits réservés.</p>
     </footer>
 
-    <script src="app.js"></script>
 </body>
 </html>
 
