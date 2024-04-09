@@ -1,3 +1,7 @@
+/* ------------------------ */
+/* ------ Main parts ------ */
+/* ------------------------ */
+
 html {
     background-image: url('images/main1.jpg');
     background-size: cover;
@@ -14,10 +18,26 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
+    color: #999;
 }
 
 header {
     padding: 10px;
+}
+
+
+/* --------------------- */
+/* ------ In-page ------ */
+/* --------------------- */
+
+h1 {
+    font-size: 40px;
+    color:#F9F9F9;
+}
+
+h3 {
+    color:#F9F9F9;
 }
 
 nav {
@@ -29,6 +49,12 @@ nav {
 a {
     text-decoration: none;
 }
+
+
+
+/* --------------------- */
+/* ------ Sign-In ------ */
+/* --------------------- */
 
 .signin {
     font-size: 18px;
@@ -44,4 +70,43 @@ a {
 .signin:hover {
     background-color: #F9F9F9;
     color: #000000CC;
+}
+
+.signup {
+    margin: 100px;
+}
+
+/* --------------------- */
+/* ------ Sign-Up ------ */
+/* --------------------- */
+
+input[type="email"] {
+    width: 400px;
+    padding: 18px;
+    border: 0px;
+    background-color: #31343E;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+input[type="email"]::placeholder {
+    color: #999;
+}
+
+button {
+    padding: 18px;
+    padding-left: 28px;
+    padding-right: 28px;
+    border: none;
+    border-radius: 5px;
+    background-color: #02D6E8;
+    color: #31343E;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
